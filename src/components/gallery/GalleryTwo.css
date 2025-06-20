@@ -1,0 +1,172 @@
+ /* =======================
+   Gallery Styles
+========================== */
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.gallery__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery__item__inner {
+  position: relative;
+  padding-top: 40px;
+}
+
+.gallery__item__inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery__item:hover .gallery__item__inner img {
+  transform: scale(1.05);
+}
+
+/* =======================
+   Gallery Overlay (Text)
+========================== */
+
+.gallery__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.gallery__item:hover .gallery__overlay {
+  transform: translateY(0);
+  
+}
+
+/* =======================
+   View Image Button
+========================== */
+
+.view-image-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery__item:hover .view-image-button {
+  opacity: 1;
+   
+}
+
+.view-image-button .btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.view-image-button .btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+   color: black;
+}
+
+/* =======================
+   Modal Styles
+========================== */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease-out;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+/* =======================
+   Animations
+========================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,184 @@
+ /* PackageStyles.css */
+
+ /* in PackagePage.css */
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+
+ .package-filter-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.package-filter {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: max-content;
+  width: 100%;
+}
+
+.package-filter .nav-item {
+  flex: 0 0 auto;
+}
+
+.package-filter .nav-link {
+  white-space: nowrap;
+}
+
+
+/* Filter Tab Styling */
+.package-filter .nav-link {
+  color: #495057;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.package-filter .nav-link.active {
+  color: #fff;
+  background-color: var(--btn-1);
+  border-color: var(--btn-1);
+}
+
+.package-filter .nav-link:not(.active):hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  border-color: rgba(var(--bs-primary-rgb), 0.2);
+}
+
+/* Package Card Styling */
+.package-card {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  border-radius: 0.5rem;
+}
+
+.package-card.animate-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Image Container */
+.package-image-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.package-image-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.package-card:hover .package-image-container img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.package-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover .package-overlay {
+  opacity: 1;
+}
+
+/* View Details Button */
+.view-details-btn {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover .view-details-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Badges */
+.discount-badge,
+.popular-badge {
+  position: absolute;
+  z-index: 2;
+  padding: 0.5em 0.7em;
+  font-size: 0.8rem;
+}
+
+.discount-badge {
+  top: 15px;
+  left: 15px;
+}
+
+.popular-badge {
+  top: 15px;
+  right: 15px;
+}
+
+/* Feature Icons */
+.feature-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  color: var(--btn-1);
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .package-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .package-filter .nav-item {
+    flex: 0 0 auto;
+  }
+
+  .package-filter .nav-link {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .package-card .package-overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .package-card .view-details-btn {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

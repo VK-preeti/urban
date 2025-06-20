@@ -1,0 +1,37 @@
+/* Animate color hover effect */
+.card.hover-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.hover-animate::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #4facfe, #43e97b);
+  background-size: 400% 400%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  animation: hoverGradient 6s linear infinite;
+}
+
+.card.hover-animate:hover::before {
+  opacity: 0.2;
+}
+
+.card.hover-animate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+@keyframes hoverGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

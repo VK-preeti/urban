@@ -1,0 +1,2 @@
+# Redirect all requests to index.html (useful for React SPA)
+ /*    /index.html   200

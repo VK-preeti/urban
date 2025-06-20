@@ -1,0 +1,45 @@
+ .restaurant-gallery__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.restaurant-gallery__row {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.restaurant-gallery__row.row-3 .restaurant-gallery__item {
+    flex: 1 1 calc(33.333% - 16px);
+}
+
+.restaurant-gallery__row.row-2 .restaurant-gallery__item {
+    flex: 1 1 calc(50% - 12px);
+}
+
+.restaurant-gallery__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.restaurant-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+    display: block;
+}
+
+.restaurant-gallery__item:hover {
+    transform: scale(1.03);
+}
+
+.restaurant-gallery__item:hover .restaurant-gallery__img {
+    transform: scale(1.05);
+}
