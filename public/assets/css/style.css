@@ -8514,7 +8514,7 @@ input:focus-visible {
 }
 
 .theme-btn.fill {
-  background: var(--btn-1);
+  background: #687a22;
   border: 0.5px solid rgba(255, 255, 255, 0.4);
   color: var(--rts-white);
   transition: var(--transition);
@@ -9388,7 +9388,7 @@ input:focus-visible {
 
 .header__top.is__home__two,
 .header__top.is__color__white {
-  background-color: rgba(0, 8, 52, 0);
+  background-color: #ddd4ab;
   color: var(--rts-white);
 }
 

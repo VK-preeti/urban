@@ -5,10 +5,14 @@ import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
 import ContactOne from '../components/contact/ContactOne'
 import FooterOne from '../components/footer/FooterOne'
 import BreadcrumbTwoCommon from '../components/breadcrumb/BreadcrumbTwoCommon'
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
   return (
     <div>
+      <Helmet>
+                 <link rel="canonical" href="https://www.theurbanescape.in/contact" />
+      </Helmet>
         <TopBar />
         <HeaderOne />
         {/* <BreadcrumbTwoCommon

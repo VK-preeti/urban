@@ -296,6 +296,8 @@ import { useParams } from 'react-router-dom';
 
 // Assuming this is your API function
 import { getRoom } from '../../api/getRoom';
+import { Helmet } from 'react-helmet-async';
+import SEO from '../../pages/Seo';
 
 function RoomSeven() {
     const { id } = useParams();
@@ -342,6 +344,13 @@ function RoomSeven() {
     return (
         <>
             {/* Single Rooms Section */}
+            <SEO
+            title="Scenic Lakeview Stays in Bhimtal - The Urban Escape"
+            description="Looking for the ideal homestay in Bhimtal? Discover The Urban Escape—offering cozy stays, breathtaking views, and a peaceful hill-station retreat. Book today!"
+            keywords="Scenic Lakeview Stays in Bhimtal "
+            canonical="https://www.theurbanescape.in/room"
+          />
+        
             <div className="rts__section pt-120">
                 <div className="container">
                     <div className="row g-30 main__content sticky-wrap">
@@ -382,7 +391,7 @@ function RoomSeven() {
                                                 <RoomCardFive roomID={room.id} />
                                                 </Link>
 
-                                                                                            </div>
+                                                </div>
                                         ))}
                                     </div>
 
@@ -466,7 +475,7 @@ function RoomSeven() {
                                         {/* <button className="theme-btn btn-style fill no-border search__btn wow fadeInUp" data-wow-delay=".6s">
                                             <span>  Book Now</span>
                                         </button> */}
-                                        <Link to='https://www.asiatech.in/booking_engine/index3.php?token=MTY='
+                                        <Link to=''
                                         className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
                                         data-wow-delay=".6s"
                                     >

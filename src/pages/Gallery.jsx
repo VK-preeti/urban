@@ -10,10 +10,13 @@ import GalleryThree from '../components/gallery/GalleryThree'
 import GalleryTwo from '../components/gallery/GalleryTwo'
 import GalleryOne from '../components/gallery/GalleryOne'
 import VideoTwo from '../components/videos/VideoTwo'
-
+import { Helmet } from 'react-helmet-async';
 function Gallery() {
   return (
     <div>
+      <Helmet>
+          <link rel="canonical" href="https://www.theurbanescape.in/gallery" />
+      </Helmet>
         <TopBar />
         <HeaderOne />
         {/* <BreadcrumbOne 

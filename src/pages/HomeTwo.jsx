@@ -35,7 +35,8 @@ import TestimonialFive from '../components/testimonials/TestimonialFive';
 import BlogOne from '../components/blog/BlogOne';
 import BlogTwo from '../components/blog/BlogTwo';
 import BlogThree from '../components/blog/BlogThree';
- 
+import { Helmet } from 'react-helmet-async'; 
+import SEO from './Seo';
  
  
 
@@ -61,7 +62,22 @@ function HomeTwo() {
     setShowBookingModal(false);
   };
   return (
-    <div>
+    <>
+        
+        <div>
+          <SEO
+            title="Best Homestay in Bhimtal – Relax at The Urban Escape Stay"
+            description="Experience the best homestay in Bhimtal at The Urban Escape offering serene views, cozy comfort, and heartfelt hospitality for couples, families,and solo guests."
+            keywords="Best Homestay in Bhimtal "
+            canonical="https://www.theurbanescape.in/"
+          />
+          {/* <Helmet>
+            <meta name="title" content ="Scenic Lakeview Stays in Bhimtal - The Urban Escape"/>
+            <meta name="description" content="Looking for the ideal homestay in Bhimtal? Discover The Urban Escape—offering cozy stays, breathtaking views, and a peaceful hill-station retreat. Book today!" />
+            <meta name="keyword" content='Scenic Lakeview Stays in Bhimtal '/>
+            <link rel="canonical" href="https://www.theurbanescape.in/" />
+
+        </Helmet> */}
         <TopBar />
         <HeaderOne />
         <BannerTwo />
@@ -70,8 +86,6 @@ function HomeTwo() {
         <FacilitiesTwo />
         <RoomTwo posts={posts}/>
         {/* <HomeRoom /> */}
-         
-        
         <TestimonialFive />
         <GuestReviewHome />
         <VideoTwo />
@@ -84,6 +98,8 @@ function HomeTwo() {
         <AwardsSection />
         <FooterOne />
     </div>
+    </>
+    
   )
 }
 

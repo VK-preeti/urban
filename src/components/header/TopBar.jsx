@@ -27,7 +27,7 @@ function TopBar() {
   }, []);
 
   return (
-    <div className="header__top" style={{background: '#F5F1E8'}}>
+    <div className="header__top" style={{background: '#687a22'}}>
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-lg-6 col-md-6">
@@ -35,14 +35,14 @@ function TopBar() {
               {loading || !topHeader ? (
                 <Skeleton width={250} height={20} />
               ) : (
-                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'black'}} to={`tel:${topHeader.mobile}`}>
+                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'white'}} to={`tel:${topHeader.mobile}`}>
                   <i className="flaticon-phone-flip" /> {topHeader.mobile}
                 </Link>
               )}
               {loading || !topHeader ? (
                 <Skeleton width={200} height={20} />
               ) : (
-                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'black'}} to={`mailto:${topHeader.mail}`}>
+                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'white'}} to={`mailto:${topHeader.mail}`}>
                   <i className="flaticon-envelope" /> {topHeader.mail}
                 </Link>
               )}
@@ -53,7 +53,7 @@ function TopBar() {
               {loading || !topHeader ? (
                 <Skeleton width={300} height={20} />
               ) : (
-                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'black'}} to="/">
+                <Link className="link__item gap-10" style={{fontWeight: 'bold', color: 'white'}} to="/">
                   <i className="flaticon-marker" /> {topHeader.address}
                 </Link>
               )}

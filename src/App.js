@@ -20,7 +20,7 @@ function App() {
  
   const phoneNumber = "+919873025200";  
   const whatsappNumber = "+919873025200";  
-  const bookingEngineUrl = "https://www.asiatech.in/booking_engine/index3.php?token=MTY="; 
+  const bookingEngineUrl = ""; 
 
   return (
     <div className="App">

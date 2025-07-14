@@ -1274,7 +1274,7 @@ const RoomDetailsSimilar = () => {
                                             </div>
                                         </div>
                                         
-                                        <a href="https://www.asiatech.in/booking_engine/index3.php?token=MTY="
+                                        <a href=""
                                             className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
                                             data-wow-delay=".6s"
                                         >

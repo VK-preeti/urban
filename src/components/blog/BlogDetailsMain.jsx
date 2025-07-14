@@ -314,7 +314,7 @@ function BlogDetailsMain() {
 
     const blogTitle = blogPost?.title || 'Check out this blog!';
     const blogSlug = blogPost?.slug ;
-    const blogUrl = `https://dynastyresort.vyaparkranti.com/${blogSlug}`;
+    const blogUrl = `https://www.theurbanescape.in/blog/${blogSlug}`;
 
 
     useEffect(() => {

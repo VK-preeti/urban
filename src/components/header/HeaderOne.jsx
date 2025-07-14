@@ -42,7 +42,7 @@ function HeaderOne() {
     return (
         <>
             {/* header menu */}
-            <header className={`main__header header__function ${isSticky ? 'is__sticky' : ''}`}>
+            <header className={`main__header header__function ${isSticky ? 'is__sticky' : ''}`} style={{ background:"#ddd4ab"}}>
                 <div className="container">
                     <div className="row">
                         <div className="main__header__wrapper">
@@ -419,9 +419,9 @@ function HeaderOne() {
                                 </button> */}
 
                                 {/* Book Now Button */}
-                                <Link to="https://www.asiatech.in/booking_engine/index3.php?token=MTY=" className="theme-btn btn-style sm-btn fill">
+                                {/* <Link to="https://www.asiatech.in/booking_engine/index3.php?token=MTY=" className="theme-btn btn-style sm-btn fill">
                                     <span>Book Now</span>
-                                </Link>
+                                </Link> */}
 
                                {/* Book Now Button */}
                             <Link

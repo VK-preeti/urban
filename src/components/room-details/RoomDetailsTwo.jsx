@@ -1926,7 +1926,7 @@ function RoomDetails() {
                                                 <span className="price h6 m-0">$82</span>
                                             </div> */}
                                             
-                                            <Link to='https://www.asiatech.in/booking_engine/index3.php?token=MTY='
+                                            <Link to=''
                                                 className="theme-btn btn-style fill no-border search__btn wow fadeInUp"
                                                 data-wow-delay=".6s"
                                             >

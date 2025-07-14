@@ -56,7 +56,7 @@ function RouterPage() {
         <LoadTop />
         <Routes>
           {/* <Route path="/" element={<HomeOne />} /> */}
-          <Route path="/" element={<HomeTwo />} />
+          {/* <Route path="/" element={<HomeTwo />} /> */}
           <Route path="/" element={<HomeTwo />} />
           <Route path="/home-3" element={<HomeThree />} />
           <Route path="/home-4" element={<HomeFour />} />

@@ -21,7 +21,7 @@ h1, .h1 {
  
 
 .h6 {
-    color: var(--heading-color);
+    color: #265538;
     font-weight: 400;
     font-family: var(--glida);
     font-size: 1.8rem;

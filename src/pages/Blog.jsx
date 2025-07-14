@@ -5,10 +5,14 @@ import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
 import BlogThree from '../components/blog/BlogThree'
 import FooterOne from '../components/footer/FooterOne'
 import BreadcrumbTwoCommon from '../components/breadcrumb/BreadcrumbTwoCommon'
+import { Helmet } from 'react-helmet-async';
 
 function Blog() {
   return (
     <div>
+      <Helmet>
+          <link rel="canonical" href="https://www.theurbanescape.in/blog" />
+      </Helmet>
         <TopBar />
         <HeaderOne />
         {/* <BreadcrumbTwoCommon

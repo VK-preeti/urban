@@ -4,11 +4,15 @@ import HeaderOne from '../components/header/HeaderOne'
 import BreadcrumbOne from '../components/breadcrumb/BreadcrumbOne'
 import ActivitiesOne from '../components/activities/ActivitiesOne'
 import FooterOne from '../components/footer/FooterOne'
+import { Helmet } from 'react-helmet-async';
 // import BreadcrumbTwoCommon from '../components/breadcrumb/BreadcrumbTwoCommon'
 
 function Activities() {
   return (
     <div>
+      <Helmet>
+         <link rel="canonical" href="https://www.theurbanescape.in/activities" />
+      </Helmet>
         <TopBar />
         <HeaderOne />
         {/* <BreadcrumbTwoCommon
