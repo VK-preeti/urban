@@ -81,7 +81,6 @@ function RouterPage() {
           {/* <Route path="/room2/:roomID" element={<RoomCardFive />} /> */}
           {/* <Route path='blog-single/:id' element={<BlogDetails />} /> */}
 
-
           <Route path="/room2/:slug" element={<RoomDetailsTwo />} />
           <Route path="/rooms/:slug" element={<RoomDetailsSimilarPage />} />
           <Route path="/blog" element={<Blog />} />

@@ -95,7 +95,7 @@ function HomeTwo() {
         <BookingModal show={showModal} handleClose={setShowModal} autoShowTime={20000} />
          
         <BlogTwo />
-        <AwardsSection />
+        {/* <AwardsSection /> */}
         <FooterOne />
     </div>
     </>

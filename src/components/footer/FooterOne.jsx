@@ -446,13 +446,13 @@ function FooterOne() {
                 Copyright © {new Date().getFullYear()} The Urban Escape. All rights reserved.
               </p>
 
-              <ul className="list-unstyled d-flex gap-3 mb-0" style={{ color: 'white', fontWeight: 'bold' }}>
+              {/* <ul className="list-unstyled d-flex gap-3 mb-0" style={{ color: 'white', fontWeight: 'bold' }}>
                   <li   ><Link to="/termscondition"  style={{ color: 'white', fontWeight: 'bold' }}>Terms & Conditions</Link></li> |
                 <li  ><Link to="/privacy"  style={{ color: 'white', fontWeight: 'bold' }}>Privacy Policy</Link></li> |
                 <li   ><Link to="/refund"  style={{ color: 'white', fontWeight: 'bold' }}>Refund Cancellation Policy</Link></li>
-               
+                */}
                 {/* <li   ><Link to="/service" style={{color: 'grey'}}>Our Service</Link></li> */}
-              </ul>
+              {/* </ul> */}
             </div>
 
             </div>

@@ -139,6 +139,11 @@ function BlogTwo() {
                                 </div>
                             ))
                         ) : (
+                            posts.length === 0 ? (
+                                <div className="col-12 text-center mb-3">
+                                    <h3>No blog found.</h3>
+                                </div>
+                            ) : (
                             visiblePosts.map((data, index) => (
                                 <div 
                                     key={`${data.id || data.slug}-${currentIndex}-${index}`} 
@@ -159,7 +164,10 @@ function BlogTwo() {
                                         blogPublishedDate={data.blog_date || data.publishedDate || new Date().toISOString().split('T')[0]}
                                     />
                                 </div>
+                               
                             ))
+                        )
+                             
                         )}
                     </div>
 

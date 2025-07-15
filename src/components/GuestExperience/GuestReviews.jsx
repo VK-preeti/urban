@@ -56,12 +56,12 @@ export default function GuestVideoReviews() {
         Guest Video Reviews
       </h2> */}
        
-        <h2 class="content__title h2 lh-1 text-center">  Guest Video Reviews</h2>
+        <h2 class="content__title h2 lh-1 text-center mt-5">  Guest Video Reviews</h2>
 
       {loading ? (
         <Skeleton count={6} height={300} />
       ) : (
-        <div className="row g-4">
+        <div className="row g-4 mt-3">
           {guestReviews.map((review, index) => (
             <div
               key={review.id}
