@@ -260,6 +260,7 @@ function ContactOne() {
     }
   };
 
+  console.log(contact,'contact contact');
   return (
     <div className="rts__section section__padding">
       <div className="container">
@@ -328,7 +329,7 @@ function ContactOne() {
               /> */}
       <iframe
   className="responsive-map"
-   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15000!2d78.9629!3d20.5937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v0000000000000"
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.5558476629176!2d79.60751057412607!3d29.324701552315275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a097002709d051%3A0xeb92aba5cabb8179!2sThe%20Urban%20Escape!5e0!3m2!1sen!2sin!4v1752584136401!5m2!1sen!2sin"
   width="100%"
   height="560"
   style={{ border: 0 }}

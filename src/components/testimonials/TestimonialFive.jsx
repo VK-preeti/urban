@@ -44,23 +44,23 @@ function TestimonialFive() {
           <div className="col-lg-5">
             <div className="testimonial__left">
               <div className="section__topbar">
-                <span className="h6 subtitle__icon__five d-block wow fadeInUp">Testimonial</span>
-                <h2 className="content__title h2 lh-1 wow fadeInUp">What Our Client Say About Us</h2>
+                <span className="h6 subtitle__icon__five d-block wow fadeInUp">Testimonials</span>
+                <h2 className="content__title h2 lh-1 wow fadeInUp">What Our Clients Say About Us</h2>
               </div>
               <div className="applicant__list mt-40">
                 <div className="single__list">
-                  <img src="/assets/images/author/3.webp" alt="" />
+                  <img src="/assets/images/author/test1.jpeg" alt="" />
                 </div>
                 <div className="single__list">
-                  <img src="/assets/images/author/4.webp" alt="" />
+                  <img src="/assets/images/author/test2.jpeg" alt="" />
                 </div>
                 <div className="single__list">
-                  <img src="/assets/images/author/5.webp" alt="" />
+                  <img src="/assets/images/author/test3.jpeg" alt="" />
                 </div>
-                <div className="single__list">
+                {/* <div className="single__list">
                   <img src="/assets/images/author/6.webp" alt="" />
                   <div className="icon-plus">+</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

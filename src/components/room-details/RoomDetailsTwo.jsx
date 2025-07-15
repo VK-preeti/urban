@@ -1660,7 +1660,7 @@ function RoomDetails() {
                                         <div className="video__area__image is__room__details jara-mask-2 jarallax">
                                             <img
                                                 className="radius-10 jarallax-img"
-                                                src="/assets/images/pages/video-bg.webp"
+                                                src="/assets/images/pages/urban.jpg"
                                                 alt=""
                                             />
                                         </div>

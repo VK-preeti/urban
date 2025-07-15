@@ -1029,7 +1029,7 @@ const RoomDetailsSimilar = () => {
                                         {!imagesLoaded.video && <ImageSkeleton />}
                                         <img
                                             className="radius-10 jarallax-img"
-                                            src="/assets/images/banner/roombanner.jpg"
+                                            src="/assets/images/pages/urban.jpg"
                                             alt="Video Background"
                                             loading="lazy"
                                             style={!imagesLoaded.video ? { display: 'none' } : {}}

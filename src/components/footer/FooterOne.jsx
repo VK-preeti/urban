@@ -318,7 +318,7 @@ function FooterOne() {
 
               {/* Guest Services */}
               <div className="rts__widget">
-                <span className="widget__title" style={{ color: 'white', fontWeight: 'bold' }}>Guest Service</span>
+                <span className="widget__title" style={{ color: 'white', fontWeight: 'bold' }}>Guest Services</span>
                 <ul>
                   <li style={{ color: 'white',  }}>24/7 Front Desk</li>
                   <li style={{ color: 'white',  }}>Parking</li>
