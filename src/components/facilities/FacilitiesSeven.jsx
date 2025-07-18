@@ -311,7 +311,7 @@ function FacilitiesSeven() {
                         <div className="facility__content">
                             <div className="section__content__left">
                                 <span className="h6 subtitle__icon__two d-block wow fadeInUp">Facilities</span>
-                                <h2 className="content__title h2 lh-1">Hotel Facilities</h2>
+                                <h2 className="content__title h2 lh-1">Hotel Facilitiesqq</h2>
                             </div>
                             <div className="row mt-20 g-5 wow fadeInUp" data-wow-delay=".5s">
                                 {renderFacilityCards()}
