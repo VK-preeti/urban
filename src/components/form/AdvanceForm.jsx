@@ -173,33 +173,37 @@ function AdvanceForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validate()) return;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!validate()) return;
 
-    const payload = {
-      name,
-      phone_no: phone.trim(),
-      checkIn: formatDate(checkInDate),
-      checkOut: formatDate(checkOutDate),
-    };
-
-    console.log('Submitting payload enquiry==============>:', payload);
-
-    try {
-      const res = await postEnquiryRoom(payload);
-      console.log("Submission Success:", res);
-      alert('Enquiry submitted successfully!');
-      setName('');
-      setPhone('');
-      setCheckInDate(null);
-      setCheckOutDate(null);
-      setErrors({});
-    } catch (error) {
-      console.error('Submission Error:', error.response?.data || error.message);
-      alert('Failed to submit enquiry. Please try again.');
-    }
+  const payload = {
+    name,
+    phone_no: phone.trim(),
+    checkIn: formatDate(checkInDate),
+    checkOut: formatDate(checkOutDate),
   };
+
+  console.log('Submitting payload enquiry==============>:', payload);
+
+  try {
+    const res = await postEnquiryRoom(payload);
+    console.log("Submission Success:", res);
+    // Reset form
+    setName('');
+    setPhone('');
+    setCheckInDate(null);
+    setCheckOutDate(null);
+    setErrors({});
+
+    // ✅ Redirect after successful submission
+    window.location.href = "https://www.theurbanescape.in/booking/";
+  } catch (error) {
+    console.error('Submission Error:', error.response?.data || error.message);
+    alert('Failed to submit enquiry. Please try again.');
+  }
+};
+
 
   return (
     <> 

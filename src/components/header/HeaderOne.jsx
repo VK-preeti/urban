@@ -416,14 +416,23 @@ function HeaderOne() {
                                     onClick={() => setIsSignupOpen(true)}
                                 >
                                     <span>Sign Up</span>
-                                </button> */}
+                                </button>
 
-                                {/* Book Now Button */}
+                                Book Now Button
                                 {/* <Link to="https://www.asiatech.in/booking_engine/index3.php?token=MTY=" className="theme-btn btn-style sm-btn fill">
                                     <span>Book Now</span>
                                 </Link> */}
 
                                {/* Book Now Button */}
+
+                               <a
+    href="https://www.theurbanescape.in/booking/"
+    className="theme-btn btn-style sm-btn fill"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <span>Book Now</span>
+</a>
                             <Link
                                 to="#"
                                 className="theme-btn btn-style sm-btn fill"
