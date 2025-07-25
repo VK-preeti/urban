@@ -306,7 +306,7 @@ function ContactOne() {
           <div className="col-lg-6">
             <img
               className="rounded-2 w-100 img-fluid"
-              src="/assets/images/banner/roombanner.jpg"
+              src="/assets/images/pages/urban.jpg"
               width={645}
               height={560}
               alt="contact"
