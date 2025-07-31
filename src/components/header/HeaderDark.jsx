@@ -246,7 +246,7 @@ function HeaderDark() {
                                 </button>
 
                                 {/* Book Now Button */}
-                                <Link to="/room/1" className="theme-btn btn-style sm-btn fill">
+                                <Link to="https://booking.theurbanescape.in/inst/#/home?propertyId=322NTSAPeGOMHfVpU0z8cU0NDk=&JDRN=Y&ap=1&gsId=322NTSAPeGOMHfVpU0z8cU0NDk=" className="theme-btn btn-style sm-btn fill">
                                     <span>Book Now</span>
                                 </Link>
 
