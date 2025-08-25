@@ -197,7 +197,7 @@ function AdvanceForm() {
     setErrors({});
 
     // ✅ Redirect after successful submission
-    window.location.href = "https://www.theurbanescape.in/booking/";
+    window.location.href = "https://booking.theurbanescape.in/inst/#/home?propertyId=322NTSAPeGOMHfVpU0z8cU0NDk=&JDRN=Y&ap=1&gsId=322NTSAPeGOMHfVpU0z8cU0NDk=";
   } catch (error) {
     console.error('Submission Error:', error.response?.data || error.message);
     alert('Failed to submit enquiry. Please try again.');

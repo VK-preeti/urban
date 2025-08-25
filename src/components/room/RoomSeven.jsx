@@ -53,7 +53,7 @@ const [child, setChild] = useState('');
 
   // Optional: append query params
   const query = `?checkIn=${encodeURIComponent(checkIn)}&checkOut=${encodeURIComponent(checkOut)}&adult=${adult}&child=${child}`;
-window.location.href = `https://www.theurbanescape.in/booking/`;
+window.location.href = `https://booking.theurbanescape.in/inst/#/home?propertyId=322NTSAPeGOMHfVpU0z8cU0NDk=&JDRN=Y&ap=1&gsId=322NTSAPeGOMHfVpU0z8cU0NDk=`;
 
 };
 

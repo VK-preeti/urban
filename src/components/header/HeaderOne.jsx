@@ -426,7 +426,7 @@ function HeaderOne() {
                                {/* Book Now Button */}
 
                                <a
-    href="https://www.theurbanescape.in/booking/"
+    href="https://booking.theurbanescape.in/inst/#/home?propertyId=322NTSAPeGOMHfVpU0z8cU0NDk=&JDRN=Y&ap=1&gsId=322NTSAPeGOMHfVpU0z8cU0NDk="
     className="theme-btn btn-style sm-btn fill"
     target="_blank"
     rel="noopener noreferrer"
