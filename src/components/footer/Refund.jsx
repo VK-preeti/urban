@@ -1,137 +1,120 @@
- import React from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Refund = () => {
   return (
-    <div className="container py-5">
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8">
-          <div className="card shadow-sm">
-            <div className="card-body p-4 p-md-5">
-              <h1 className="text-center fw-bold mb-4">Refund Policy</h1>
-
-              <p class="last-updated"><strong>Last Updated: June 17, 2025</strong></p>
-    
-    <h5>1. Acceptance of Terms</h5>
-    <p>By using our website/service, you agree to these terms. If you don't agree, please don't use our service.</p>
-    
-    <h5>2. Use of Service</h5>
-    <p>When using our service, please follow these guidelines:</p>
-    <ul>
-        <li>You must be 18+ to use this service</li>
-        <li>Don't use our service for illegal activities</li>
-        <li>Don't spam or harass other users</li>
-        <li>Keep your account information secure</li>
-    </ul>
-    
-    <h5>3. User Content</h5>
-    <p>Regarding content you share on our platform:</p>
-    <ul>
-        <li>You're responsible for content you post</li>
-        <li>Don't post copyrighted material without permission</li>
-        <li>We can remove content that violates our rules</li>
-        <li>You give us permission to use your content on our platform</li>
-    </ul>
-    
-    <h5>4. Privacy</h5>
-    <p>Your privacy is important to us. Please read our Privacy Policy for details on how we handle your data.</p>
-    
-    <h5>5. Payments and Refunds</h5>
-    <p>Our payment and refund policies are as follows:</p>
-    <ul>
-        <li>All sales are final unless otherwise stated</li>
-        <li>Prices may change without notice</li>
-        <li>Refunds processed within 5-7 business days</li>
-    </ul>
-    
-    <h5>6. Disclaimers</h5>
-    <p>Please be aware of the following disclaimers:</p>
-    <ul>
-        <li>Service provided "as is"</li>
-        <li>We don't guarantee uptime or error-free service</li>
-        <li>Use at your own risk</li>
-    </ul>
-    
-    <h5>7. Limitation of Liability</h5>
-    <p>We're not responsible for:</p>
-    <ul>
-        <li>Lost data or profits</li>
-        <li>Indirect or consequential damages</li>
-        <li>Issues with third-party services</li>
-    </ul>
-    
-    <h5>8. Termination</h5>
-    <p>Account termination policies:</p>
-    <ul>
-        <li>You can cancel your account anytime</li>
-        <li>We can terminate accounts for rule violations</li>
-        <li>These terms survive account termination</li>
-    </ul>
-    
-    <h5>9. Changes to Terms</h5>
-    <p>We may update these terms. Continued use means you accept the changes.</p>
-    
-    <h5>10. Contact Us</h5>
-    <p>Questions? Email us at: support@example.com</p>
-    
-    <p class="disclaimer"><em>This is a simplified example. Consult a lawyer for actual legal documents.</em></p>
- 
-              
-              {/* <div className="mb-4">
-                <h2 className="h4 fw-bold">Our Commitment</h2>
-                <p>At [Your Company], we are committed to ensuring your satisfaction with our products and services. We understand that sometimes a purchase may not meet your expectations, which is why we have a straightforward refund policy in place.</p>
-              </div> */}
-              
-              {/* <div className="mb-4">
-                <h2 className="h4 fw-bold">Refund Eligibility</h2>
-                <p>To be eligible for a refund, please make sure that:</p>
-                <ul className="mb-3">
-                  <li>Your request is made within 30 days of purchase</li>
-                  <li>The product is in its original condition</li>
-                  <li>You have a valid proof of purchase</li>
-                </ul>
-                <p>Please note that certain products and services may have specific refund conditions which will be clearly communicated at the time of purchase.</p>
-              </div> */}
-              
-              {/* <div className="mb-4">
-                <h2 className="h4 fw-bold">Refund Process</h2>
-                <p>Once we receive your refund request:</p>
-                <ol className="mb-3">
-                  <li>Our team will review your request within 2-3 business days</li>
-                  <li>We will inform you of the approval or rejection of your refund</li>
-                  <li>If approved, your refund will be processed within 5-7 business days</li>
-                  <li>Depending on your payment method and bank, it may take an additional 5-10 business days for the refund to reflect in your account</li>
-                </ol>
-              </div> */}
-              
-              {/* <div className="mb-4">
-                <h2 className="h4 fw-bold">Non-Refundable Items</h2>
-                <p>The following items are generally not eligible for refund:</p>
-                <ul className="mb-3">
-                  <li>Digital products after they have been downloaded</li>
-                  <li>Services that have been fully performed</li>
-                  <li>Customized or personalized products</li>
-                  <li>Items marked as non-refundable at time of purchase</li>
-                </ul>
-              </div> */}
-              
-              {/* <div className="mb-4">
-                <h2 className="h4 fw-bold">Contact Information</h2>
-                <p>If you have any questions about our refund policy or wish to request a refund, please contact our customer support team:</p>
-                <p className="mb-1"><strong>Email:</strong> support@yourcompany.com</p>
-                <p className="mb-1"><strong>Phone:</strong> (555) 123-4567</p>
-                <p className="mb-1"><strong>Hours:</strong> Monday-Friday, 9:00 AM - 5:00 PM EST</p>
-              </div> */}
-              
-              {/* <div className="alert alert-info mt-4">
-                <p className="mb-0 text-center">This refund policy was last updated on May 5, 2025.</p>
-              </div> */}
+    <div className="bg-light min-vh-100 py-5">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-10 col-xl-8">
+            
+            {/* Header */}
+            <div className="text-center mb-5">
+              <h1 className="display-4 fw-bold text-success mb-3">Refund Policy</h1>
+              <p className="lead text-muted mb-4">Urban Escape Resort</p>
+              <hr className="border-success opacity-25 w-25 mx-auto"/>
+              <p className="text-muted">
+                At <strong>Urban Escape</strong>, we maintain a <strong>strict no-refund policy</strong>.
+              </p>
             </div>
+
+            {/* Main Content Card */}
+            <div className="card shadow border-0 rounded-4">
+              <div className="card-body p-5">
+                
+                {/* Section 1 */}
+                <section className="mb-5">
+                  <h4 className="text-success fw-bold border-bottom border-success pb-2 mb-4">
+                    1. Cancellations
+                  </h4>
+                  <div className="ms-4">
+                    <p className="text-muted mb-2">• Once a booking is made and payment is received, it is <strong>non-refundable</strong>.</p>
+                    <p className="text-muted mb-0">• Guests who fail to show up for their reservation will not be eligible for any refund.</p>
+                  </div>
+                </section>
+
+                {/* Section 2 */}
+                <section className="mb-5">
+                  <h4 className="text-success fw-bold border-bottom border-success pb-2 mb-4">
+                    2. Modifications
+                  </h4>
+                  <div className="ms-4">
+                    <p className="text-muted mb-2">• Booking changes may be allowed depending on availability but are not guaranteed.</p>
+                    <p className="text-muted mb-0">• Any rescheduling requests must be communicated directly to our team.</p>
+                  </div>
+                </section>
+
+                {/* Section 3 */}
+                <section className="mb-5">
+                  <h4 className="text-success fw-bold border-bottom border-success pb-2 mb-4">
+                    3. Force Majeure
+                  </h4>
+                  <p className="text-muted lh-lg">
+                    In case of natural disasters, government restrictions, or unforeseen events, bookings remain non-refundable.
+                  </p>
+                </section>
+
+                {/* Contact Section */}
+                <section>
+                  <h4 className="text-success fw-bold border-bottom border-success pb-2 mb-4">
+                    4. Contact Us
+                  </h4>
+                  <div className="mb-4">
+                    <div className="row g-3">
+                      <div className="col-md-6">
+                        <div className="d-flex align-items-center">
+                          <i className="bi bi-telephone-fill text-success me-3"></i>
+                          <div>
+                            <p className="mb-1 fw-semibold">Phone Numbers:</p>
+                            <p className="text-muted small mb-0">+91-9873025200</p>
+                            <p className="text-muted small mb-0">+91-8954310200</p>
+                            <p className="text-muted small mb-0">+91-9873578700</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="d-flex align-items-center">
+                          <i className="bi bi-envelope-fill text-success me-3"></i>
+                          <div>
+                            <p className="mb-1 fw-semibold">Email:</p>
+                            <p className="text-muted small mb-0">sales@urbanescape.in</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-12">
+                        <div className="d-flex align-items-start">
+                          <i className="bi bi-geo-alt-fill text-success me-3 mt-1"></i>
+                          <div>
+                            <p className="mb-1 fw-semibold">Address:</p>
+                            <p className="text-muted small mb-0">
+                              Jangalia Gaon, Bhimtal, Uttarakhand - 263136, India
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="d-flex justify-content-center gap-3 flex-wrap">
+                      <Link to="/contact" className="btn btn-success rounded-pill">
+                        <i className="bi bi-chat-dots me-2"></i>Contact Us
+                      </Link>
+                      <a href="mailto:sales@urbanescape.in" className="btn btn-outline-success rounded-pill">
+                        <i className="bi bi-envelope me-2"></i>sales@urbanescape.in
+                      </a>
+                      <a href="tel:+919873025200" className="btn btn-outline-success rounded-pill">
+                        <i className="bi bi-telephone me-2"></i>Call Now
+                      </a>
+                    </div>
+                  </div>
+                </section>
+
+              </div>
+            </div>
+
+
           </div>
-          
-          {/* <div className="text-center mt-4">
-            <button className="btn btn-primary me-2">Submit Refund Request</button>
-            <button className="btn btn-outline-secondary">Contact Support</button>
-          </div> */}
         </div>
       </div>
     </div>

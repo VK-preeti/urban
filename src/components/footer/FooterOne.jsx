@@ -107,9 +107,9 @@ function FooterOne() {
                   <li><Link to="/blog" style={{ color: 'white',   }}>Blog</Link></li>
                   <li><Link to="/contact" style={{ color: 'white',   }}>Contact Us</Link></li>
                    <li><Link to="/gallery" style={{ color: 'white',   }}>Gallery</Link></li>
-                  {/* <li><Link to="/termscondition">Terms & Conditions</Link></li> */}
-                  {/* <li><Link to="/privacy">Privacy Policy</Link></li> */}
-                  {/* <li><Link to="/refund">Refund Cancellation Policy</Link></li> */}
+                   <li><Link to="/termscondition" style={{ color: 'white',   }}>Terms & Conditions</Link></li> 
+                  <li><Link to="/privacy" style={{ color: 'white',   }}>Privacy Policy</Link></li>
+                 <li><Link to="/refund" style={{ color: 'white',   }}>Refund Policy</Link></li>
                   {/* <li><Link to="/service" style={{ color: 'white',  }}>Our Service</Link></li> */}
                   <li><Link to="/resturant" style={{ color: 'white',   }}>Restaurant</Link></li>
                 </ul>
